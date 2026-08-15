@@ -420,15 +420,20 @@ section {
     height: 140px;
     margin: 0 auto 24px;
     border-radius: 50%;
+    overflow: hidden;
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     display: grid;
     place-items: center;
-    font-size: 48px;
-    font-weight: 800;
-    color: white;
     border: 4px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 50px rgba(139, 92, 246, 0.3);
     position: relative;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 .profile-card h3 {
     font-size: 26px;
@@ -1045,7 +1050,9 @@ footer {
 
         <div class="hero-profile reveal">
             <div class="glass-card profile-card">
-                <div class="profile-avatar"> <img src=""portfolio.png"" alt="">MP</div>
+                <div class="profile-avatar">
+    <img src="portfolio.png" alt="Meet Patel">
+</div>
                 <h3>Meet Patel</h3>
                 <p>CSE Student • Web Developer • Cybersecurity Enthusiast</p>
                 <div class="available">
